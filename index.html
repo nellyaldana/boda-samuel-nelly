@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Invitación de Boda</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Great+Vibes&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Invitación Boda Samuel & Nelly</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1 class="title fade-in">Samuel & Nelly</h1>
-    <p class="subtitle fade-in delay">¡Nos casamos!</p>
 
-    <div class="details fade-in delay2">
-      <p>📅 <strong>25 de octubre de 2025</strong></p>
-      <p>🕓 <strong>4:00 p.m.</strong></p>
-      <p>📍 <a href="https://maps.app.goo.gl/A1VWjkk8MzrQkgCo6" target="_blank">Salón Las Palmas</a></p>
+  <!-- Sobre animado -->
+  <div class="envelope" id="envelope">
+    <div class="flap flap-top"></div>
+    <div class="flap flap-bottom"></div>
+    <div class="card">
+      <h1>¡Estás invitado!</h1>
+      <button onclick="abrirInvitacion()">Abrir invitación</button>
     </div>
-
-    <p class="fade-in delay3">Con mucho amor,</p>
-    <p class="fade-in delay4"><strong>Samuel Velazco y Nelly Aldana</strong></p>
-
-    <footer class="fade-in delay5">
-      <p>Por favor confirma tu asistencia</p>
-      <p>📱 WhatsApp: 123-456-7890</p>
-    </footer>
   </div>
+
+  <!-- Contenido de la invitación -->
+  <div class="contenido" id="contenido">
+    <section class="section inicio">
+      <h2>Samuel & Nelly</h2>
+      <p>Nos complace invitarte a nuestra boda</p>
+      <a href="#detalles" class="boton">Ver detalles</a>
+    </section>
+
+    <section class="section detalles" id="detalles">
+      <h3>Detalles del Evento</h3>
+      <p><strong>📅 Fecha:</strong> 25 de Octubre de 2025</p>
+      <p><strong>📍 Lugar:</strong> <a href="https://www.google.com.mx/maps/place/Salon+Las+Palmas/@32.489891,-117.0873486,16z" target="_blank">Salón Las Palmas</a></p>
+      <a href="#confirmacion" class="boton">Confirmar asistencia</a>
+    </section>
+
+    <section class="section confirmacion" id="confirmacion">
+      <h3>Confirma tu asistencia</h3>
+      <p>Por favor confirma antes del 1 de octubre</p>
+      <a href="https://wa.me/52XXXXXXXXXX" target="_blank" class="boton">Confirmar por WhatsApp</a>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

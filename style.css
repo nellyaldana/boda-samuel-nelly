@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fef7f4;
+  scroll-behavior: smooth;
+}
+
+/* SOBRE ANIMADO */
+.envelope {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 100px auto;
+  perspective: 1000px;
+}
+
+.flap {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: #f8d9d6;
+  z-index: 2;
+  transition: transform 1s ease;
+}
+
+.flap-top {
+  top: 0;
+  transform-origin: bottom;
+}
+
+.flap-bottom {
+  bottom: 0;
+  transform-origin: top;
+}
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 1;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.card h1 {
+  font-size: 1.8rem;
+  color: #cc6e6e;
+  margin-bottom: 1rem;
+}
+
+.card button {
+  background-color: #cc6e6e;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* CONTENIDO PRINCIPAL */
+.contenido {
+  display: none;
+  animation: fadeIn 1s ease-in;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.inicio {
+  background: #ffe2e0;
+  color: #4a2c2a;
+}
+
+.detalles {
+  background: #fff5f1;
+  color: #4a2c2a;
+}
+
+.confirmacion {
+  background: #fcdada;
+  color: #4a2c2a;
+}
+
+h2, h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+a.boton {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #cc6e6e;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+a.boton:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
